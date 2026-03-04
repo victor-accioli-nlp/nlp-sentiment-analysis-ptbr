@@ -1,28 +1,35 @@
-# NLP Sentiment Analysis - PTBR
+# NLP Sentiment Analysis (PT-BR)
 
-This project is a simple Natural Language Processing (NLP) experiment
-focused on sentiment analysis in Brazilian Portuguese.
+Projeto simples de análise de sentimento em português utilizando abordagem baseada em regras (Rule-Based).
 
-## Objective
+## 📌 Objetivo
 
-Classify sentences as:
-- Positive
-- Negative
-- Neutral
+Classificar frases como:
 
-## Technologies (planned)
+- Positivo
+- Negativo
+- Neutro
 
-- Python
-- Scikit-learn
-- Pandas
-- NLP preprocessing techniques
+Utilizando listas de palavras-chave.
 
-## Future Improvements
+## 🧠 Como funciona
 
-- Train a machine learning model
-- Create a simple API
-- Deploy online
+O algoritmo:
 
----
+1. Converte o texto para minúsculo
+2. Divide a frase em palavras
+3. Conta quantas palavras positivas e negativas aparecem
+4. Retorna a classificação com maior pontuação
 
-Author: Victor Accioli
+## 📊 Estrutura do Projeto
+
+- `sentiment.py` → código principal
+- Dataset manual para testes
+- Função de avaliação com cálculo de acurácia
+
+## 🚀 Como executar
+
+Execute o arquivo:
+
+```bash
+python sentiment.py
